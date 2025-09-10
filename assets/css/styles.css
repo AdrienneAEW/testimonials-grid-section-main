@@ -98,4 +98,7 @@ footer .attribution a {
     padding: 2rem 2rem 0;
     grid-template-areas: "largecard" "smallcard" "smallcard2" "largecard2" "tallcard";
   }
+  .quote-pic {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
