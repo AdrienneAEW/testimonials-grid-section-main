@@ -1,0 +1,101 @@
+body {
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  max-width: 1440px;
+  background-color: hsl(214, 17%, 92%);
+}
+
+main {
+  font-size: 13px;
+  padding: 8rem 8rem 0;
+  display: grid;
+  grid-template-areas: "largecard largecard largecard largecard largecard smallcard tallcard" "smallcard2 largecard2 largecard2 largecard2 largecard2 largecard2 tallcard";
+  gap: 2rem;
+}
+main .card1 {
+  grid-area: largecard;
+}
+main .card2 {
+  grid-area: smallcard;
+}
+main .card3 {
+  grid-area: smallcard2;
+}
+main .card4 {
+  grid-area: largecard2;
+}
+main .card5 {
+  grid-area: tallcard;
+  align-content: center;
+}
+main .card {
+  padding: 1.75rem 2.5rem;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(219, 29%, 14%);
+  border-radius: 15px;
+}
+main .card h1 {
+  margin: 0;
+}
+main .card p {
+  margin: 0;
+}
+main .card figure {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 75px auto;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+main .card figure img {
+  border-radius: 50%;
+}
+main .card figure p {
+  opacity: 0.45;
+}
+main .card figure + p {
+  margin: 1rem 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+main .card1, main .card2, main .card4 {
+  color: hsl(214, 17%, 92%);
+}
+main .card1 {
+  position: relative;
+  background-color: hsl(263, 55%, 52%);
+}
+main .card1 .quote-pic {
+  position: absolute;
+  top: 0;
+  right: 8rem;
+  width: 150px;
+}
+main .card1 figure, main .card1 p {
+  position: relative;
+  z-index: 100;
+}
+main .card2 {
+  background-color: hsl(217, 19%, 35%);
+}
+main .card4 {
+  background-color: hsl(219, 29%, 14%);
+}
+
+footer {
+  margin: 1.5rem 0;
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 992px) {
+  main {
+    padding: 2rem 2rem 0;
+    grid-template-areas: "largecard" "smallcard" "smallcard2" "largecard2" "tallcard";
+  }
+}/*# sourceMappingURL=styles.css.map */
